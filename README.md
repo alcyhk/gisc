@@ -18,7 +18,7 @@ ShiftL
 
 Addition
 
-Multiplication
+Multiplication (e.g 3*4)
 <p align="left">
   <img src="quantumMultiplication.png" width="350" title="hover text">
 </p>
