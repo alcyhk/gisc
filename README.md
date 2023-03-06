@@ -19,7 +19,7 @@ ShiftL
 Addition
 
 Multiplication
-<p align="center">
+<p align="left">
   <img src="quantumMultiplication.png" width="350" title="hover text">
 </p>
 
