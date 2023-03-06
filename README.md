@@ -7,11 +7,17 @@ Opcode
 
 
 Arith
+
 Equal
+
 Flip
+
 Mask
-Shift
+
+ShiftL
+
 Addition
+
 Multiplication
 <p align="center">
   <img src="quantumMultiplication.png" width="350" title="hover text">
