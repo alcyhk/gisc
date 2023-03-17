@@ -99,7 +99,7 @@ graph TD;
 #### Multiplication (e.g 3bits 3*4)
 <img src="photos/qMul.png" title="Quantum Multiplication">
 
-Demo: [qAlgoMul.py](qAlgoMul.py)  
+Demo: [qAlgoMul.py](backup/qAlgoMul.py)  
 
 Usage:  
 ```
