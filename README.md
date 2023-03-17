@@ -92,7 +92,31 @@ graph TD;
 
 #### Equal
 
-#### Greater
+#### Greater Than 
+<img src="photos/qGt.png" title="Quantum Greater Than">
+
+Demo: [qAlgoGt.py](backup/qAlgoGt.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoGt.py
+```
+
+Sample Input:  
+```
+inputA(0-7):5
+inputB(0-7):5
+```
+Sample Output:  
+```
+1101
+1
+0
+1
+1
+13
+```
+Meaning: 7+6 = 13  
 
 #### Addition 
 <img src="photos/qAdd.png" title="Quantum Addition">
@@ -118,8 +142,9 @@ Sample Output:
 1
 13
 ```
+Meaning: 7+6 = 13  
 
-#### Multiplication (e.g 3bits 3*4)
+#### Multiplication  
 <img src="photos/qMul.png" title="Quantum Multiplication">
 
 Demo: [qAlgoMul.py](backup/qAlgoMul.py)  
@@ -139,6 +164,8 @@ Sample Output:
 001100
 12
 ```
+Meaning: 3*4 = 12  
+
 
 
 ## 8-bits GISC Quantum Computer Prototype
