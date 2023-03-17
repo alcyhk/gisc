@@ -22,7 +22,7 @@ pip:  https://pip.pypa.io
 user@computer: python3 arch.py
 ```
 
-## ISA (a.k.a. SCPF)
+## ISA
 ***Opcode***  
 - ***Set***: Assign value to a register
 - ***Cpy***: Copy from one grid register to another
@@ -36,9 +36,9 @@ user@computer: python3 arch.py
 
 | ISA | Dec | Bin | Architecture | Usage | Example(Dec) |Example(Bin)
 | :--:|:-:| :-: | :----: | :---- |:-: |:-:|
-| Set |1| 01 | <_Set_> <_GRegA_>  <_Value_> | Assign 3 to grid register 1 |1 1 3| 01 001 011 |
-| Cpy |2| 10 | <_Cpy_> <_GRegA_>  <_GRegB_> | Copy 3 from grid register 1 to grid register 2 |2 2 1| 10 010 001 |
-| Phy |3| 11 | <_Phy_> <_GRegA_>  <_PRegB_> | Copy 3 from phy register 4 to grid register 1 |3 1 4| 11 001 100 |
+| Set |1| 01 | <_Set_> <_GRegA_>  <_Value_> | Assign 3 to GReg 1 |1 1 3| 01 001 011 |
+| Cpy |2| 10 | <_Cpy_> <_GRegA_>  <_GRegB_> | Copy 3 from GReg 1 to GReg 2 |2 2 1| 10 010 001 |
+| Phy |3| 11 | <_Phy_> <_GRegA_>  <_PRegB_> | Copy 3 from PReg 4 to GReg 1 |3 1 4| 11 001 100 |
 | Fly |0| 00 | <_Fly_> <_DCare_>  <_DCare_> | Jump to another instruction |0 0 0| 00 000 000 |
 
 \* GReg: Grid Register  
@@ -75,24 +75,27 @@ graph TD;
 ## Key Components
 
 ### Qfe (Quantum Flip Engine)
-<_Image of Qfe_>
+<_Image of Qfe_>  
+<_Code of Qfe_>  
+
 
 ### Arithmetic
 
-### Flip
+#### Flip
 
-### Mask
+#### Mask
 
-### Shift
-<_Image of Equal>
+#### Shift
+<_Image of Shift_>  
+<_Code of Shift_>  
 
-### Equal
+#### Equal
 
-### Greater
+#### Greater
 
-### Addition 
+#### Addition 
 
-### Multiplication (e.g 3bits 3*4)
+#### Multiplication (e.g 3bits 3*4)
 <p align="left">
   <img src="quantumMultiplication.png" width="350" title="hover text">
 </p>
