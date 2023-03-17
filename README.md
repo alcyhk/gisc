@@ -12,6 +12,7 @@ GISC is an instruction set architecture designed for the ***general-purpose quan
 ## Simulation
 The project is simulated in python3 with Qiskit. Please install the required libraries and repositories before proceeding.
 
+
 ### Requirements
 python3: https://www.python.org  
 Qiskit: https://qiskit.org  
@@ -96,9 +97,8 @@ graph TD;
 #### Addition 
 
 #### Multiplication (e.g 3bits 3*4)
-<p align="left">
-  <img src="quantumMultiplication.png" width="350" title="hover text">
-</p>
+<img src="quantumMultiplication.png" width="350" title="hover text">
+
 
 ## 8-bits GISC Quantum Computer Prototype
 Codename: Darklain
