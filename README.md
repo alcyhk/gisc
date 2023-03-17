@@ -76,14 +76,41 @@ graph TD;
 ## Key Components
 
 ### Qfe (Quantum Flip Engine)
-<_Image of Qfe_>  
-<_Code of Qfe_>  
+<img src="photos/qfe.png" title="Quantum Flip Engine" width=50%>
+
+Demo: [qfe.py](backup/qfe.py)  
+
+Usage:  
+```
+user@computer: python3 qfe.py
+```
+Sample Output:  
+```
+0b0,0001,1
+0b1,0010,2
+0b10,0011,3
+0b11,0100,4
+0b100,0101,5
+0b101,0110,6
+0b110,0111,7
+0b111,1000,8
+0b1000,1001,9
+0b1001,1010,10
+0b1010,1011,11
+0b1011,1100,12
+0b1100,1101,13
+0b1101,1110,14
+0b1110,1111,15
+0b1111,0000,0
+
+```
+Meaning: Qfe iterates from 0 to 15 
 
 
 ### Arithmetic
 
 #### Flip
-<img src="photos/qFlip.png" title="Quantum Flip" width=40%>
+<img src="photos/qFlip.png" title="Quantum Flip" width=50%>
 
 Demo: [qAlgoFlip.py](backup/qAlgoFlip.py)  
 
@@ -105,7 +132,7 @@ Sample Output:
 Meaning: 101 f 011 = 110  
 
 #### Mask
-<img src="photos/qMask.png" title="Quantum Mask" width=30%>
+<img src="photos/qMask.png" title="Quantum Mask" width=40%>
 
 Demo: [qAlgoMask.py](backup/qAlgoMask.py)  
 
