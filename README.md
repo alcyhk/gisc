@@ -90,7 +90,40 @@ graph TD;
 <_Image of Shift_>  
 <_Code of Shift_>  
 
-#### Equal
+#### Equal to
+<img src="photos/qEq.png" title="Quantum Equal to">
+
+
+Demo: [qAlgoEq.py](backup/qAlgoEq.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoEq.py
+```
+
+Sample Input 1:  
+```
+inputA(0-7):5
+inputB(0-7):5
+```
+Sample Output 1:  
+```
+111
+1
+```
+Meaning: 5 == 5 = 1  
+
+Sample Input 2:  
+```
+inputA(0-7):6
+inputB(0-7):5
+```
+Sample Output 1:  
+```
+100
+0
+```
+Meaning: 6 == 5 = 0  
 
 #### Greater Than 
 <img src="photos/qGt.png" title="Quantum Greater Than">
