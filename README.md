@@ -85,10 +85,31 @@ graph TD;
 #### Flip
 
 #### Mask
+<img src="photos/qMask.png" title="Quantum Mask">
+
+Demo: [qAlgoMask.py](backup/qAlgoMask.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoMask.py
+```
+
+Sample Input:  
+```
+inputA(0-7):5
+inputB(0-7):3
+```
+Sample Output:  
+```
+001
+1
+```
+Meaning: 101 & 011 = 001  
+
+
 
 #### Shift
 <img src="photos/qShift.png" title="Quantum Shift">
-
 
 Demo: [qAlgoShift.py](backup/qAlgoShift.py)  
 
@@ -114,7 +135,7 @@ Sample Input 2:
 inputA(0-7):2
 inputB(0-7):1
 ```
-Sample Output 1:  
+Sample Output 2:  
 ```
 001
 1
@@ -149,7 +170,7 @@ Sample Input 2:
 inputA(0-7):6
 inputB(0-7):5
 ```
-Sample Output 1:  
+Sample Output 2:  
 ```
 100
 0
@@ -183,7 +204,7 @@ Sample Input 2:
 inputA(0-7):6
 inputB(0-7):5
 ```
-Sample Output 1:  
+Sample Output 2:  
 ```
 0001
 1
