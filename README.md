@@ -7,7 +7,8 @@ GISC is an instruction set architecture designed for the ***general-purpose quan
 \* For the proof of conept with a classical computer. Please go to ...  
 
 ## Blueprint
-<img src="photos/gisc_blueprint.png" title="Blueprint">
+<img src="photos/gisc_blueprint.png" title="Blueprint">  
+
 Download: [gisc_blueprint.pdf](backup/gisc_blueprint.pdf)  
 
 ## Simulation
