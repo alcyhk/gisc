@@ -97,7 +97,7 @@ graph TD;
 #### Addition 
 
 #### Multiplication (e.g 3bits 3*4)
-<img src="quantumMultiplication.png" width="350" title="hover text">
+<img src="qMul.png" title="hover text">
 
 
 ## 8-bits GISC Quantum Computer Prototype
