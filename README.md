@@ -122,7 +122,9 @@ Sample Output:
 Codename: Darklain
 
 ## Specification
-Length of ISA: 8 Bits  
+ISA Size: 8 Bits  
+Max ISA Address: 8 Operations
+Register Size(Grid & Phy): 3 bit (0-7) 
 Number of loops: 10 runs  
 Number of Quantum bits: 177  
 Number of Classical bits: 42  
@@ -154,6 +156,13 @@ Depth of Basis Gates: 8058
 |VAL_FIVE 		|101|5|
 |VAL_SIX		|110|6|
 |VAL_SEVEN		|111|7|
+
+\* QUB_SG: Qubit Set Get Command
+\* QUB_F_CON: Qubit Fly Condition
+\* QUB_F_Pos: Qubit Fly Position
+\* QUB_OUTPUTCL: Qubit Output C Lower 3 bits
+\* QUB_OUTPUTCU: Qubit Output C Upper 3 bits
+
 
 ## Sample Input
 Purpose:  
