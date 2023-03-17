@@ -99,6 +99,24 @@ graph TD;
 #### Multiplication (e.g 3bits 3*4)
 <img src="photos/qMul.png" title="Quantum Multiplication">
 
+Demo: [qAlgoMul.py](qAlgoMul.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoMul.py
+```
+
+Sample Input:  
+```
+inputA(0-7):3
+inputB(0-7):4
+```
+Sample Output:  
+```
+001100
+12
+```
+
 
 ## 8-bits GISC Quantum Computer Prototype
 Codename: Darklain
