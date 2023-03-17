@@ -83,9 +83,29 @@ graph TD;
 ### Arithmetic
 
 #### Flip
+<img src="photos/qFlip.png" title="Quantum Flip" width=40%>
+
+Demo: [qAlgoFlip.py](backup/qAlgoFlip.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoFlip.py
+```
+
+Sample Input:  
+```
+inputA(0-7):5
+inputB(0-7):3
+```
+Sample Output:  
+```
+110
+6
+```
+Meaning: 101 f 011 = 110  
 
 #### Mask
-<img src="photos/qMask.png" title="Quantum Mask">
+<img src="photos/qMask.png" title="Quantum Mask" width=30%>
 
 Demo: [qAlgoMask.py](backup/qAlgoMask.py)  
 
