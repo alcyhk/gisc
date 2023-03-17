@@ -95,6 +95,29 @@ graph TD;
 #### Greater
 
 #### Addition 
+<img src="photos/qAdd.png" title="Quantum Addition">
+
+Demo: [qAlgoAdd.py](backup/qAlgoAdd.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoAdd.py
+```
+
+Sample Input:  
+```
+inputA(0-7):7
+inputB(0-7):6
+```
+Sample Output:  
+```
+1101
+1
+0
+1
+1
+13
+```
 
 #### Multiplication (e.g 3bits 3*4)
 <img src="photos/qMul.png" title="Quantum Multiplication">
