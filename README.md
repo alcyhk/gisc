@@ -102,21 +102,29 @@ Usage:
 user@computer: python3 qAlgoGt.py
 ```
 
-Sample Input:  
+Sample Input 1:  
 ```
 inputA(0-7):5
 inputB(0-7):5
 ```
-Sample Output:  
+Sample Output 1:  
 ```
-1101
-1
+0000
 0
-1
-1
-13
 ```
-Meaning: 7+6 = 13  
+Meaning: 5 > 5 = 0  
+
+Sample Input 2:  
+```
+inputA(0-7):6
+inputB(0-7):5
+```
+Sample Output 1:  
+```
+0001
+1
+```
+Meaning: 6 > 5 = 1  
 
 #### Addition 
 <img src="photos/qAdd.png" title="Quantum Addition">
