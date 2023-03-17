@@ -1,8 +1,26 @@
 # GISC
 ## Grid Instruction Set Computer
 
-## Description:
-GISC is an instruction set architecture designed for the ***general-purpose quantum computer***. Here is the proof of conept with a 8 bits GISC QPU.
+## Description
+GISC is an instruction set architecture designed for the ***general-purpose quantum computer***. Here is the proof of conept with a 8 bits GISC qpu.  
+
+\*For the proof of conept with a classical computer. Please go to ...  
+
+## Design
+<_Image_>
+
+## Simulation
+The project is simulated in python3 with Qiskit. Please install the required libraries and repositories before proceeding.
+
+### Requirements
+python3: https://www.python.org  
+Qiskit: https://qiskit.org  
+pip:  https://pip.pypa.io  
+
+### Usage
+```
+user@computer: python3 arch.py
+```
 
 ## ISA (a.k.a. SCPF)
 ***Opcode***  
@@ -78,8 +96,6 @@ graph TD;
 <p align="left">
   <img src="quantumMultiplication.png" width="350" title="hover text">
 </p>
-
-### VM
 
 ## 8-bits GISC Quantum Computer Prototype
 Codename: Darklain
