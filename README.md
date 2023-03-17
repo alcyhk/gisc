@@ -1,14 +1,21 @@
-# gisc
-Grid Instruction Set Computer
+# GISC
+## Grid Instruction Set Computer
 
-Qfe
+## Qfe (Quantum Flip Engine)
+<_Image of Qfe_>
 
-Opcode
+
+## Opcode
 
 
-Arith
+## Arith
+
+Flip
+
+Mask
 
 Equal
+<_Image of Equal>
 
 Flip
 
