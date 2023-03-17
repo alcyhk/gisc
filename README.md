@@ -87,8 +87,39 @@ graph TD;
 #### Mask
 
 #### Shift
-<_Image of Shift_>  
-<_Code of Shift_>  
+<img src="photos/qShift.png" title="Quantum Shift">
+
+
+Demo: [qAlgoShift.py](backup/qAlgoShift.py)  
+
+Usage:  
+```
+user@computer: python3 qAlgoShift.py
+```
+
+Sample Input 1:  
+```
+inputA(0-7):2
+inputB(0-7):0
+```
+Sample Output 1:  
+```
+100
+4
+```
+Meaning: 2 << 1 = 4  
+
+Sample Input 2:  
+```
+inputA(0-7):2
+inputB(0-7):1
+```
+Sample Output 1:  
+```
+001
+1
+```
+Meaning: 2 >> 1 = 1  
 
 #### Equal to
 <img src="photos/qEq.png" title="Quantum Equal to">
