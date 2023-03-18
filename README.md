@@ -37,7 +37,7 @@ user@computer: python3 arch.py
 \* Phys Registers connect to Grid Registers and physical layer input  
 
 
-| ISA | Dec | Bin | Architecture | Usage | Example(Dec) |Example(Bin)
+| ISA | Dec | Bin | Arch | Usage | Ex. (Dec) |Ex. (Bin)
 | :--:|:-:| :-: | :----: | :---- |:-: |:-:|
 | Set |1| 01 | <_Set_> <_GRegA_>  <_Value_> | Assign 3 to GReg 1 |1 1 3| 01 001 011 |
 | Cpy |2| 10 | <_Cpy_> <_GRegA_>  <_GRegB_> | Copy 3 from GReg 1 to GReg 2 |2 2 1| 10 010 001 |
