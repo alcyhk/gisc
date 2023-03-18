@@ -22,6 +22,7 @@ pip:  https://pip.pypa.io
 
 ### Usage
 ```
+user@computer: cd prototype
 user@computer: python3 arch.py
 ```
 
@@ -84,6 +85,7 @@ Demo: [qfe.py](backup/qfe.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qfe.py
 ```
 Sample Output:  
@@ -104,7 +106,6 @@ Sample Output:
 0b1101,1110,14
 0b1110,1111,15
 0b1111,0000,0
-
 ```
 Meaning: Qfe iterates from 0 to 15 
 
@@ -118,6 +119,7 @@ Demo: [qAlgoFlip.py](backup/qAlgoFlip.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoFlip.py
 ```
 
@@ -140,6 +142,7 @@ Demo: [qAlgoMask.py](backup/qAlgoMask.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoMask.py
 ```
 
@@ -164,6 +167,7 @@ Demo: [qAlgoShift.py](backup/qAlgoShift.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoShift.py
 ```
 
@@ -199,6 +203,7 @@ Demo: [qAlgoEq.py](backup/qAlgoEq.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoEq.py
 ```
 
@@ -233,6 +238,7 @@ Demo: [qAlgoGt.py](backup/qAlgoGt.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoGt.py
 ```
 
@@ -267,6 +273,7 @@ Demo: [qAlgoAdd.py](backup/qAlgoAdd.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoAdd.py
 ```
 
@@ -293,6 +300,7 @@ Demo: [qAlgoMul.py](backup/qAlgoMul.py)
 
 Usage:  
 ```
+user@computer: cd backup
 user@computer: python3 qAlgoMul.py
 ```
 
