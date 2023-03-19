@@ -65,7 +65,8 @@ graph TD;
     ModOpaddr -- Op Address Switch --> ModAlgo;
     ModISA -- Run All Algorithms--> ModAlgo;
     ModAlgo -- Parse the Selected Result to Measurement --> ModMeasure;
-    ModMeasure -- Measure the result --> End;
+    ModMeasure -- Measure the result --> ModSG;
+    ModSG -- Interpret the Set/Get Register --> End;
     End -- Repeat --> Start
     
 ```
