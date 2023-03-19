@@ -4,7 +4,7 @@
 ## Description
 GISC is an instruction set architecture designed for the ***general-purpose quantum computer***. Here is the proof of conept with a 8 bits GISC qpu.  
 
-\* For the proof of conept with a classical computer. Please go to ...  
+\* For the proof of concept with a classical computer. Please go to ...  
 
 ## Blueprint
 <img src="photos/blueprint.png" title="Blueprint">  
