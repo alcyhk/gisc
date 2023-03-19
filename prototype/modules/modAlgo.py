@@ -102,25 +102,7 @@ def qcAlgoAssign(circuit):
 
 
 
-def qcAlgoflip(circuit):
-	
-	#all algo_flip
-	#A 01010101
-	#B 11111111
-	#C 10101010
-
-	#partial algo_flip
-	#A 01010101
-	#B 11110000
-	#C 10100000
-
-	#x(a[0])
-	#mcx(b[0],a[0],c[0])
-	#x(a[0])
-	
-	#put a to c
-	#then algo_flip c if b
-	
+def qcAlgoFlip(circuit):
 	
 	circuit.cx(algo_flipA0,algo_flipC0)
 	circuit.cx(algo_flipA1,algo_flipC1)
@@ -135,22 +117,7 @@ def qcAlgoflip(circuit):
 	circuit.cswap(algo_flipS,algo_flipC2,qreg_outputCL2)
 
 	
-def qcAlgomask(circuit):
-	
-	#algo_mask
-	#A 01010101
-	#B 11111111
-	#C 01010101
-
-	#partial algo_mask
-	#A 01010101
-	#B 11110000
-	#C 01010000
-	
-
-	#x(a[0])
-	#mcx(b[0],a[0],c[0])
-	#x(a[0])
+def qcAlgoMask(circuit):
 	
 	circuit.mcx([qreg_inputB0,qreg_inputA0],algo_maskC0)
 	circuit.mcx([qreg_inputB1,qreg_inputA1],algo_maskC1)
@@ -162,10 +129,7 @@ def qcAlgomask(circuit):
 	circuit.cswap(algo_maskS,algo_maskC2,qreg_outputCL2)
 	
 
-def qcAlgoshift(circuit):
-	#0 == algo_shift Left once, #1 == algo_shift Rite once
-
-	#000, #001, #010, #011 
+def qcAlgoShift(circuit):
 
 	circuit.cx(algo_shiftA0,algo_shiftC0)
 	circuit.cx(algo_shiftA1,algo_shiftC1)
@@ -177,15 +141,10 @@ def qcAlgoshift(circuit):
 	circuit.x(algo_shiftB2)
 
 	circuit.mcx([algo_shiftB2,algo_shiftB1,algo_shiftB0],algo_shiftD0)
-	#circuit.cswap(algo_shiftD0,algo_shiftC2,algo_shiftD1)
-	#circuit.cswap(algo_shiftD0,algo_shiftC1,algo_shiftC2)
-	#circuit.cswap(algo_shiftD0,algo_shiftC0,algo_shiftC1)
 
 	circuit.cswap(algo_shiftD0,algo_shiftC1,algo_shiftC2)
 	circuit.cswap(algo_shiftD0,algo_shiftC0,algo_shiftC1)
 	circuit.cswap(algo_shiftD0,algo_shiftD1,algo_shiftC0)
-
-
 
 	circuit.mcx([algo_shiftB2,algo_shiftB1,algo_shiftB0],algo_shiftD0)
 	circuit.x(algo_shiftB0)
@@ -216,7 +175,7 @@ def qcAlgoshift(circuit):
 	circuit.cswap(algo_shiftS,algo_shiftC1,qreg_outputCL1)
 	circuit.cswap(algo_shiftS,algo_shiftC2,qreg_outputCL2)
 	
-def qcAlgoequal(circuit):
+def qcAlgoEqual(circuit):
 	
 	circuit.x(algo_equalA0)
 	circuit.mcx([algo_equalA0,algo_equalB0],algo_equalC0)
@@ -262,7 +221,7 @@ def qcAlgoequal(circuit):
 
 
 
-def qcAlgogreater(circuit):
+def qcAlgoGreater(circuit):
 	circuit.x(algo_greaterB2)
 	circuit.mcx([algo_greaterA2,algo_greaterB2],algo_greaterC0)
 	circuit.x(algo_greaterB2)
@@ -331,7 +290,7 @@ def qcAlgogreater(circuit):
 	circuit.cswap(algo_greaterS,algo_greaterC2,qreg_outputCL2)
 
 	
-def qcAlgoadd(circuit):
+def qcAlgoAdd(circuit):
 	#inputA0 inputA1 inputA2/ inputB0 inputB1 inputB2
 	circuit.cx(algo_addA0,algo_addC0)
 	circuit.cx(algo_addB0,algo_addC0)
@@ -363,23 +322,13 @@ def qcAlgoadd(circuit):
 	circuit.mcx([algo_addA1,algo_addA0,algo_addB0,algo_addB2],algo_addC3)
 	circuit.mcx([algo_addA0,algo_addB0,algo_addB1,algo_addB2],algo_addC3)
 
-	"""
-	#upload
-	#110 6 
-	circuit.x(qreg_inputS0)
-	circuit.mcx([qreg_inputS0,qreg_inputS1,qreg_inputS2],algo_addS)
-
-	
-
-	circuit.x(qreg_inputS0)
-	"""
 
 	circuit.cswap(algo_addS,algo_addC0,qreg_outputCL0)
 	circuit.cswap(algo_addS,algo_addC1,qreg_outputCL1)
 	circuit.cswap(algo_addS,algo_addC2,qreg_outputCL2)
 	circuit.cswap(algo_addS,algo_addC3,qreg_outputCU0)
 
-def qcAlgomul(circuit):
+def qcAlgoMul(circuit):
 	#qreg_outputCL0
 	circuit.mcx([algo_mulA0,algo_mulB0], algo_mulC0)
 
@@ -466,10 +415,11 @@ def qcAlgomul(circuit):
 def ModAlgo(circuit):
 	qcAlgoAssign(circuit)
 
-	qcAlgoflip(circuit)
-	qcAlgomask(circuit)
-	qcAlgoshift(circuit)
-	qcAlgoequal(circuit)
-	qcAlgogreater(circuit)
-	qcAlgoadd(circuit)
-	qcAlgomul(circuit)
+	qcAlgoFlip(circuit)
+	qcAlgoMask(circuit)
+	qcAlgoShift(circuit)
+	qcAlgoEqual(circuit)
+	qcAlgoGreater(circuit)
+	qcAlgoAdd(circuit)
+	qcAlgoMul(circuit)
+
