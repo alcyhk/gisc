@@ -30,7 +30,7 @@ user@computer: python3 arch.py
 ***Opcode***  
 - ***Set***: Assign value to a register
 - ***Cpy***: Copy from one grid register to another
-- ***Phy***: Copy from one phys register to grid register
+- ***Phy***: Copy from one phys register to other grid register
 - ***Fly***: Jump to another instruction if the jump condition is true
 
 \* ISA refers to Instruction Set Architecture
