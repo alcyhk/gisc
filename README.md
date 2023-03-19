@@ -75,6 +75,7 @@ graph TD;
 \* ModISA: Module ISA  
 \* ModAlgo: Module Algorithm  
 \* ModMeasure: Module Measurement  
+\* ModSG: Module Set/Get
 
 ------------------------------------------------------------
 ## Key Components
