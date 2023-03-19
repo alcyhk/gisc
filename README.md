@@ -27,7 +27,6 @@ sudo apt install python3-pip
 pip install qiskit
 ```
 
-sudo apt update sudo apt install python3-pip
 ### Usage
 ```
 user@computer: cd prototype
