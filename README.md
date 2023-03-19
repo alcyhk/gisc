@@ -590,7 +590,7 @@ Type of gates
 	 swap 1
 Non-local gates:  309
 Number of Quantum bits:  177
-Number of Classical bits:  42
+Number of Classical bits:  66
 Depth:  151
 End
 
