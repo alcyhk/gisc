@@ -17,9 +17,17 @@ The project is simulated in python3 with Qiskit. Please install the required lib
 
 ### Requirements
 python3: https://www.python.org  
-Qiskit: https://qiskit.org  
 pip:  https://pip.pypa.io  
+Qiskit: https://qiskit.org  
 
+### Install Requirements on Linux
+Debian/Ubuntu  
+```
+sudo apt install python3-pip
+pip install qiskit
+```
+
+sudo apt update sudo apt install python3-pip
 ### Usage
 ```
 user@computer: cd prototype
