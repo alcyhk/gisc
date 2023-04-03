@@ -608,7 +608,10 @@ End
 2D - 2 Dimensions
 3D - 3 Dimensions
 
-## Desired Architecture
+## Device Architecture
+
+Grid-like Coupling Architecture
+
 Neutral Atoms
 
 If Total Basic gates exceeds maximum depth
@@ -630,7 +633,7 @@ Comment Code snippet line by line
 Explain Algorithm
 
 Reference:
-
+https://link.springer.com/article/10.1007/s11128-020-02873-5 (Grid-like Coupling Architecture)
 
 
 
