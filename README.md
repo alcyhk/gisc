@@ -604,4 +604,26 @@ Depth:  151
 End
 
 ```
+## Coupling Map
+2D - 2 Dimensions
+3D - 3 Dimensions
+
+## Desired Architecture
+Neutral Atoms
+
+If Total Basic gates exceeds maximum depth
+	split to 2 or 3 sectors
+	
+optimize the circuit to reduce the number of swap gates 
+
+Mapping Table for qubits
+
+## Future
+GISC is capable of contructing 16 bits, 32 bits or 64 bits architecture
+
+Todo
+Comment Code snippet line by line
+Explain Algorithm
+Reference:
+
 
