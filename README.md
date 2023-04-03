@@ -374,6 +374,21 @@ Depth of Basis Gates: 8058
 
 
 ## Sample Input
+
+Math Notation:
+
+$$ A = 2 $$
+
+$$ B = 3 $$
+
+$$ S = CL $$
+
+$$ J = 1 $$
+
+$$ P = 7 $$
+
+$$ F $$
+
 Purpose:  
 **To test registers assignment, copying and loop.**
 ```
