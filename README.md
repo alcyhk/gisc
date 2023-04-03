@@ -122,7 +122,7 @@ Meaning: Qfe iterates from 0 to 15
 ### Arithmetic
 
 #### Flip
-<img src="photos/qFlip.png" title="Quantum Flip" width=50%>
+![Quantum Flip](photos/qFlip.png){ width=50% }
 
 Demo: [qAlgoFlip.py](backup/qAlgoFlip.py)  
 
