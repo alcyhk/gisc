@@ -622,8 +622,15 @@ Mapping Table for qubits
 GISC is capable of contructing 16 bits, 32 bits or 64 bits architecture
 
 Todo
+
+Sample Input
+
 Comment Code snippet line by line
+
 Explain Algorithm
+
 Reference:
+
+
 
 
