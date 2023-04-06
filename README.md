@@ -626,6 +626,9 @@ End
 ```
 ## Coupling Map
 
+### 2D Architecture
+16x16 2D Grid
+
 GISC uses grid architecture as coupling map.
 <img src="photos/grid.png" title="Grid Mapping">
 
@@ -659,6 +662,8 @@ This is how the grid looks after mapping with qubits.
 <img src="photos/grid_mapped.png" title="Grid Mapping">
 
 ### 3D Architecture 
+
+7x7x7 3D Grid
 <img src="photos/cubeFront.png" title="Cube Front">
 
 <img src="photos/cubeDiag.png" title="Cube Diagonal">
