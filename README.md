@@ -687,6 +687,7 @@ Mapping Table for qubits
 GISC is capable of contructing 16 bits, 32 bits or 64 bits architecture
 
 Todo
+4 bit GISC for testing actutal hardware
 
 Sample Input
 
