@@ -624,9 +624,9 @@ End
 
 
 ```
-## Coupling Map
+## Device Architecture
 
-### 2D Architecture
+### 2D Coupling Map
 16x16 2D Grid
 
 GISC uses grid architecture as coupling map.
@@ -661,7 +661,7 @@ The mapping routs clockwise, in which starts from the middle and ends at the bot
 This is how the grid looks after mapping with qubits.
 <img src="photos/grid_mapped.png" title="Grid Mapping">
 
-### 3D Architecture 
+### 3D Coupling Map 
 
 7x7x7 3D Grid
 <img src="photos/cubeFront.png" title="Cube Front">
