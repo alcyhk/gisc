@@ -69,14 +69,16 @@ graph TD;
     Start -- Fetch CRegs and Update QRegs--> ModAppend;
     ModAppend -- Op Address Increment --> ModOpaddr;
     ModAppend -- Get the ISA --> ModISA;
-    ModOpaddr -- Op Address Switch --> ModAlgo;
-    ModISA -- Run All Algorithms--> ModAlgo;
+    ModAppend -- Run All Algorithms --> ModAlgo;
+    ModOpaddr -- Op Address Switch --> ModMeasure;
+    ModISA -- Run All ops--> ModMeasure;
     ModAlgo -- Parse the Selected Result to Measurement --> ModMeasure;
     ModMeasure -- Measure the result --> ModSG;
     ModSG -- Interpret the Set/Get Register --> End;
     End -- Repeat --> Start
     
 ```
+
 \* ModAppend: Module Append  
 \* ModOpaddr: Module Operation Address  
 \* ModISA: Module ISA  
