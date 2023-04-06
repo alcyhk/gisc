@@ -626,6 +626,11 @@ End
 ```
 ## Coupling Map
 
+GISC uses grid architecture as coupling map.
+<img src="photos/grid.png" title="Grid Mapping">
+
+The mapping routs clockwise, in which starts from the middle and ends at the bottom right corner.
+<img src="photos/clockwise.png" title="Clockwise">
 
 
 |QB|Qubit Mapping|
@@ -807,6 +812,9 @@ End
 |174|algo_greaterS|
 |175|algo_addS|
 |176|algo_mulS|
+
+This is how the grid looks after mapping with qubits.
+<img src="photos/grid_mapped.png" title="Grid Mapping">
 
 
 2D - 2 Dimensions
