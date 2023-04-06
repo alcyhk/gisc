@@ -664,8 +664,11 @@ This is how the grid looks after mapping with qubits.
 ### 3D Coupling Map 
 
 7x7x7 3D Grid
+<img src="photos/cubeFrontN.png" title="Cube Front No Mapped">
+
 <img src="photos/cubeFront.png" title="Cube Front">
 
+<img src="photos/cubeDiagN.png" title="Cube Diagonal No Mapped">
 <img src="photos/cubeDiag.png" title="Cube Diagonal">
 
 
