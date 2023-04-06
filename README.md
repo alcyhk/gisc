@@ -694,6 +694,8 @@ GISC is capable of contructing 16 bits, 32 bits or 64 bits architecture
 Todo
 4 bit GISC for testing actutal hardware
 
+lifetime(~20us == ~20,000ns) for each qubit [from Rigetti doc]
+
 Sample Input
 
 Comment Code snippet line by line
