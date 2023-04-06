@@ -338,9 +338,9 @@ Max ISA Address: 8 Operations
 Register Size(Grid & Phy): 3 bit (0-7)  
 Number of loops: 10 runs  
 Number of Quantum bits: 177  
-Number of Classical bits: 42  
-Depth of Logic Gates: 151  
-Depth of Basis Gates: 8058  
+Number of Classical bits: 66  
+Depth of Logic Gates: 104  
+Depth of Basis Gates: 7065  
 
 ## Key Parameters
 |Name|Binary|Decimal|
@@ -419,7 +419,7 @@ run  1
 Current Addr:  0
 ISA: OP_SET QUB_INPUTA VAL_TWO 
 
-Result: {'000001001011010000000000000010000000000001': 1}
+Result: {'000000000000000000000000000001001011010000000000000010000000000001': 1}
 opaddr  1 | 0 0 1
 isa  0 1 0 1 1 0 1 0
 fly,set,cpy,phy  0 1 0 0
@@ -438,7 +438,7 @@ run  2
 Current Addr:  1
 ISA: OP_SET QUB_INPUTB VAL_THREE
 
-Result: {'000001001100011000000000011010000000000010': 1}
+Result: {'000000000000000000000000000001001100011000000000011010000000000010': 1}
 opaddr  2 | 0 1 0
 isa  0 1 1 0 0 0 1 1
 fly,set,cpy,phy  0 1 0 0
@@ -457,7 +457,7 @@ run  3
 Current Addr:  2
 ISA: OP_SET QUB_INPUTS VAL_SEVEN
 
-Result: {'000001001101111000110111011010000000000011': 1}
+Result: {'000000000000000000000000000001001101111000000111011010000000000011': 1}
 opaddr  3 | 0 1 1
 isa  0 1 1 0 1 1 1 1
 fly,set,cpy,phy  0 1 0 0
@@ -467,7 +467,7 @@ regSG  0
 regInputA  2
 regInputB  3
 regInputS  7
-regOutputCL  6
+regOutputCL  0
 regOutputCU  0
 ----------------------------
 
@@ -476,7 +476,7 @@ run  4
 Current Addr:  3
 ISA: OP_CPY QUB_REGA QUB_OUTPUTCL
 
-Result: {'000010010000110000110111011010000000110100': 1}
+Result: {'000000000000000000000000000010010000110000110111011010000000110100': 1}
 opaddr  4 | 1 0 0
 isa  1 0 0 0 0 1 1 0
 fly,set,cpy,phy  0 0 1 0
@@ -495,7 +495,7 @@ run  5
 Current Addr:  4
 ISA: OP_SET QUB_F_CON VAL_ONE
 
-Result: {'010001001011001000011111011001000000110101': 1}
+Result: {'000000000000000000000000010001001011001000110111011001000000110101': 1}
 opaddr  5 | 1 0 1
 isa  0 1 0 1 1 0 0 1
 fly,set,cpy,phy  0 1 0 0
@@ -505,7 +505,7 @@ regSG  0
 regInputA  1
 regInputB  3
 regInputS  7
-regOutputCL  3
+regOutputCL  6
 regOutputCU  0
 ----------------------------
 
@@ -514,7 +514,7 @@ run  6
 Current Addr:  5
 ISA: OP_SET QUB_F_POS VAL_SEVEN
 
-Result: {'011001001100111000111111111001000000110110': 1}
+Result: {'000000000000000000000000011001001100111000011111111001000000110110': 1}
 opaddr  6 | 1 1 0
 isa  0 1 1 0 0 1 1 1
 fly,set,cpy,phy  0 1 0 0
@@ -524,7 +524,7 @@ regSG  0
 regInputA  1
 regInputB  7
 regInputS  7
-regOutputCL  7
+regOutputCL  3
 regOutputCU  0
 ----------------------------
 
@@ -533,7 +533,7 @@ run  7
 Current Addr:  6
 ISA: OP_FLY VAL_ZERO VAL_ZERO
 
-Result: {'111000100000000000111111111001000000110111': 1}
+Result: {'000000000000000000000000111000100000000000111111111001000000110111': 1}
 opaddr  7 | 1 1 1
 isa  0 0 0 0 0 0 0 0
 fly,set,cpy,phy  1 0 0 0
@@ -552,7 +552,7 @@ run  8
 Current Addr:  7
 ISA: OP_FLY VAL_ZERO VAL_ZERO
 
-Result: {'000000100000000000111111111001000000110111': 1}
+Result: {'000000000000000000000000000000100000000000111111111001000000110111': 1}
 opaddr  7 | 1 1 1
 isa  0 0 0 0 0 0 0 0
 fly,set,cpy,phy  1 0 0 0
@@ -571,7 +571,7 @@ run  9
 Current Addr:  7
 ISA: OP_FLY VAL_ZERO VAL_ZERO
 
-Result: {'000000100000000000111111111001000000110111': 1}
+Result: {'000000000000000000000000000000100000000000111111111001000000110111': 1}
 opaddr  7 | 1 1 1
 isa  0 0 0 0 0 0 0 0
 fly,set,cpy,phy  1 0 0 0
@@ -590,7 +590,7 @@ run  10
 Current Addr:  7
 ISA: OP_FLY VAL_ZERO VAL_ZERO
 
-Result: {'000000100000000000111111111001000000110111': 1}
+Result: {'000000000000000000000000000000100000000000111111111001000000110111': 1}
 opaddr  7 | 1 1 1
 isa  0 0 0 0 0 0 0 0
 fly,set,cpy,phy  1 0 0 0
@@ -605,20 +605,23 @@ regOutputCU  0
 ----------------------------
 
 Type of gates
-	 x 173
+	 x 158
 	 mcx 103
-	 ccx 58
+	 state_preparation 59
 	 cx 58
-	 cswap 58
+	 ccx 58
+	 cswap 56
 	 measure 42
 	 mcx_gray 31
-	 barrier 2
+	 barrier 1
 	 swap 1
-Non-local gates:  309
+Non-local gates:  307
 Number of Quantum bits:  177
 Number of Classical bits:  66
-Depth:  151
+Depth:  104
+Depth(basis gates):  7065
 End
+
 
 ```
 ## Coupling Map
