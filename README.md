@@ -695,6 +695,8 @@ Todo
 4 bit GISC for testing actutal hardware
 
 lifetime(~20us == ~20,000ns) for each qubit [from Rigetti doc]
+each gate ~(40-180ns)
+current 7065*180ns == 1271700 ns == 1271.7us
 
 Sample Input
 
