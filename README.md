@@ -658,8 +658,10 @@ The mapping routs clockwise, in which starts from the middle and ends at the bot
 This is how the grid looks after mapping with qubits.
 <img src="photos/grid_mapped.png" title="Grid Mapping">
 
-### Conceptual Architecture for Neutral Atoms
-<img src="photos/neutralAtoms.png" title="Neutral Atoms">
+### 3D Architecture 
+<img src="photos/cubeFront.png" title="Cube Front">
+
+<img src="photos/cubeDiag.png" title="Cube Diagonal">
 
 
 
