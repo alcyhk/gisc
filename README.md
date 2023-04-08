@@ -225,7 +225,7 @@ Sample Output 2:
 Meaning: 2 >> 1 = 1  
 
 #### Equal to
-$$ C = A == B $$
+$$ C = (A == B) $$
 
 <img src="photos/qEq.png" title="Quantum Equal to">
 
