@@ -187,9 +187,8 @@ Meaning: 101 & 011 = 001
 
 
 #### Shift
-$$ if \ B[0] \ == \ 0 \, \ C \ = \ A \ << \ 1 $$
+$$ C = B[0] \ ? \ A >> 1 \ : \ A << 1 $$
 
-$$ if \ B[0] \ == \ 1 \, \ C \ = \ A \ >> \ 1 $$
 
 <img src="photos/qShift.png" title="Quantum Shift">
 
