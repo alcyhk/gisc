@@ -123,21 +123,18 @@ Sample Output:
 Meaning: Qfe iterates from 0 to 15 
 
 
+
+11 0
+10 1
+01 1
+00 0
+
 ### Arithmetic
 
 #### Flip
 
-$$ if B[2], C[2] = !(A[2]) $$
+$$ C = A \ xor \ B $$
 
-$$ else, C[2] = A[2] $$
-
-$$ if B[1], C[1] = !(A[1]) $$
-
-$$ else, C[1] = A[1] $$
-
-$$ if B[0], C[0] = !(A[0]) $$
-
-$$ else, C[0] = A[0] $$
 
 <img src="photos/qFlip.png" title="Quantum Flip" width=50%>
 
@@ -162,18 +159,8 @@ Sample Output:
 Meaning: 101 f 011 = 110  
 
 #### Mask
-$$ if B[2] == 1, C[2] = A[2] $$
 
-$$ else, C[2] = 0 $$
-
-$$ if B[1], C[1] = A[1] $$
-
-$$ else, C[1] = 0 $$
-
-$$ if B[0], C[0] = A[0] $$
-
-$$ else, C[0] = 0 $$
-
+$$ C = A \ and \ B $$
 
 <img src="photos/qMask.png" title="Quantum Mask" width=40%>
 
