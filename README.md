@@ -133,7 +133,7 @@ Meaning: Qfe iterates from 0 to 15
 
 #### Flip
 
-$$ C = A \ xor \ B $$
+$$ C = A \wedge B  $$
 
 
 <img src="photos/qFlip.png" title="Quantum Flip" width=50%>
@@ -187,8 +187,8 @@ Meaning: 101 & 011 = 001
 
 
 #### Shift
-$$ if B[0] == 0, C = A << 1 $$
-$$ if B[0] == 1, C = A >> 1 $$
+$$ if \ B[0] \ == \ 0 \, \ C \ = \ A \ << \ 1 $$
+$$ if \ B[0] \ == \ 1 \, \ C \ = \ A \ >> \ 1 $$
 
 <img src="photos/qShift.png" title="Quantum Shift">
 
@@ -225,9 +225,7 @@ Sample Output 2:
 Meaning: 2 >> 1 = 1  
 
 #### Equal to
-$$ if A == B, C = 1 $$
-
-$$ else, C = 0 $$
+$$ C = A == B $$
 
 <img src="photos/qEq.png" title="Quantum Equal to">
 
@@ -266,10 +264,7 @@ Meaning: 6 == 5 = 0
 
 #### Greater Than 
 
-$$ if A > B, C = 1 $$
-
-$$ else, C = 0 $$
-
+$$ C = A > B $$
 <img src="photos/qGt.png" title="Quantum Greater Than">
 
 Demo: [qAlgoGt.py](backup/qAlgoGt.py)  
