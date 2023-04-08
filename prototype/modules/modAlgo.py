@@ -422,4 +422,3 @@ def ModAlgo(circuit):
 	qcAlgoGreater(circuit)
 	qcAlgoAdd(circuit)
 	qcAlgoMul(circuit)
-
