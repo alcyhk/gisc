@@ -90,6 +90,8 @@ graph TD;
 ## Key Components
 
 ### Qfe (Quantum Flip Engine)
+$$ Q = Q + 1 $$
+
 <img src="photos/qfe.png" title="Quantum Flip Engine" width=50%>
 
 Demo: [qfe.py](backup/qfe.py)  
@@ -160,7 +162,7 @@ Sample Output:
 Meaning: 101 f 011 = 110  
 
 #### Mask
-$$ if B[2], C[2] = A[2] $$
+$$ if B[2] == 1, C[2] = A[2] $$
 
 $$ else, C[2] = 0 $$
 
@@ -198,6 +200,9 @@ Meaning: 101 & 011 = 001
 
 
 #### Shift
+$$ if B[0] == 0, C = A << 1 $$
+$$ if B[0] == 1, C = A >> 1 $$
+
 <img src="photos/qShift.png" title="Quantum Shift">
 
 Demo: [qAlgoShift.py](backup/qAlgoShift.py)  
@@ -233,6 +238,10 @@ Sample Output 2:
 Meaning: 2 >> 1 = 1  
 
 #### Equal to
+$$ if A == B, C = 1 $$
+
+$$ else, C = 0 $$
+
 <img src="photos/qEq.png" title="Quantum Equal to">
 
 
@@ -269,6 +278,11 @@ Sample Output 2:
 Meaning: 6 == 5 = 0  
 
 #### Greater Than 
+
+$$ if A > B, C = 1 $$
+
+$$ else, C = 0 $$
+
 <img src="photos/qGt.png" title="Quantum Greater Than">
 
 Demo: [qAlgoGt.py](backup/qAlgoGt.py)  
@@ -304,6 +318,8 @@ Sample Output 2:
 Meaning: 6 > 5 = 1  
 
 #### Addition 
+$$ C = A + B $$
+
 <img src="photos/qAdd.png" title="Quantum Addition">
 
 Demo: [qAlgoAdd.py](backup/qAlgoAdd.py)  
@@ -331,6 +347,8 @@ Sample Output:
 Meaning: 7+6 = 13  
 
 #### Multiplication  
+$$ C = A * B $$
+
 <img src="photos/qMul.png" title="Quantum Multiplication">
 
 Demo: [qAlgoMul.py](backup/qAlgoMul.py)  
