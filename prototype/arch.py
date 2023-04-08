@@ -22,13 +22,13 @@ def main():
 	cregs = ['0' for i in range(NUM_OF_CREGS)]
 	for numOfRuns in range(maxNumOfRuns):
 		ModSimRunHeader(numOfRuns)
-		simulator = AerSimulator(method='matrix_product_state')
+		simulator = AerSimulator(method='matrix_product_state')	
 		circuit = QuantumCircuit()
 		ParamQcRegsInit(circuit)
 		ModAppend(circuit,cregs) 
+		ModAlgo(circuit)
 		ModOpaddr(circuit) 
 		ModISA(circuit)
-		ModAlgo(circuit)
 		ModMeasure(circuit)
 		cregs = ModSimRunFooter(circuit,simulator,cregs)
 		ModSG(cregs,repo,fifoTx,fifoRx)
