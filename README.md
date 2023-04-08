@@ -679,6 +679,8 @@ This is how the grid looks after mapping with qubits.
 
 Grid-like Coupling Architecture
 
+Accuracy depends on the number of shots.
+
 Neutral Atoms
 
 If Total Basic gates exceeds maximum depth
