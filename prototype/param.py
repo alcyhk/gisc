@@ -6,7 +6,7 @@ def ParamInit():
 	VAL_ZERO,VAL_ONE,VAL_TWO,VAL_THREE,VAL_FOUR,VAL_FIVE,VAL_SIX,VAL_SEVEN, \
 	FIFO_TX_SIZE, FIFO_RX_SIZE
 
-	global maxNumOfRuns, NUM_OF_CREGS,\
+	global maxNumOfRuns, NUM_OF_CREGS,SHOTS, \
 		opaddr0,opaddr1,opaddr2, \
 		isa0,isa1,isa2,isa3,isa4,isa5,isa6,isa7, \
 		dmy0,dmy1,dmy2, \
@@ -54,6 +54,7 @@ def ParamInit():
 		c_qreg_phy_h0,c_qreg_phy_h1,c_qreg_phy_h2 
 #---------------------------------
 	maxNumOfRuns = 10
+	SHOTS = 10
 	NUM_OF_CREGS = 66
 	FIFO_TX_SIZE = 8
 	FIFO_RX_SIZE = 8
