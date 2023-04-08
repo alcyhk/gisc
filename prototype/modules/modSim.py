@@ -3,8 +3,6 @@ from qiskit.visualization import plot_histogram
 import sys,os
 sys.path.append('../')
 from param import *
-
-
 from collections import OrderedDict
 
 
@@ -43,26 +41,26 @@ def simRunFooterPrintDec(cregs):
 	print('regOutputCU ',int(cregs[c_qreg_outputCU2]+cregs[c_qreg_outputCU1]+cregs[c_qreg_outputCU0],2))
 
 def ModSimRunFooter(circuit,simulator,cregs):
-	
 	compiled_circuit = transpile(circuit, simulator)
 
-	job = simulator.run(compiled_circuit, shots=1)
+	job = simulator.run(compiled_circuit, shots=SHOTS)
 
 	result = job.result()
 
 	counts = result.get_counts(compiled_circuit)
 	print("\nResult:",counts)
-	for cregs in counts:
-		pass
+
 	initFlag = 1
 
+	cregs = max(counts,key=counts.get)
+	
 	cregs = cregs[::-1]
 
-	
 	simRunFooterPrintTop(cregs)
 	#simRunFooterPrintBin(cregs)
 	simRunFooterPrintDec(cregs)
 	print("----------------------------\n")
+
 	return cregs
 
 
@@ -78,16 +76,13 @@ def simMetaEndPrint(circuit):
 	print('Number of Quantum bits: ',simNumOfQbits)
 	print('Number of Classical bits: ',simNumOfCbits)
 	print('Depth: ',circuit.depth())
-	#print('Depth(basis gates): ',transpile(circuit, basis_gates=['u','cx','x','cswap','swap']).depth())
+	
 	print("End")
 
 def simMetaEndDraw(circuit):
 	circuit.draw(output='text',filename='blueprint')
 
+
 def ModSimMetaEnd(circuit):
 	simMetaEndPrint(circuit)
 	simMetaEndDraw(circuit)
-
-	
-	
-
