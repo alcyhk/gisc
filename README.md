@@ -120,7 +120,7 @@ Sample Output:
 0b1110,1111,15
 0b1111,0000,0
 ```
-Meaning: Qfe iterates from 0 to 15 
+Explain: Qfe iterates from 0 to 15 
 
 
 
@@ -156,7 +156,7 @@ Sample Output:
 110
 6
 ```
-Meaning: 101 f 011 = 110  
+Explain: 101 f 011 = 110  
 
 #### Mask
 
@@ -182,7 +182,7 @@ Sample Output:
 001
 1
 ```
-Meaning: 101 & 011 = 001  
+Explain: 101 & 011 = 001  
 
 
 
@@ -210,7 +210,7 @@ Sample Output 1:
 100
 4
 ```
-Meaning: 2 << 1 = 4  
+Explain: 2 << 1 = 4  
 
 Sample Input 2:  
 ```
@@ -222,7 +222,7 @@ Sample Output 2:
 001
 1
 ```
-Meaning: 2 >> 1 = 1  
+Explain: 2 >> 1 = 1  
 
 #### Equal to
 $$ C = (A == B) $$
@@ -248,7 +248,7 @@ Sample Output 1:
 111
 1
 ```
-Meaning: 5 == 5 = 1  
+Explain: 5 == 5 = 1  
 
 Sample Input 2:  
 ```
@@ -260,7 +260,7 @@ Sample Output 2:
 100
 0
 ```
-Meaning: 6 == 5 = 0  
+Explain: 6 == 5 = 0  
 
 #### Greater Than 
 
@@ -285,7 +285,7 @@ Sample Output 1:
 0000
 0
 ```
-Meaning: 5 > 5 = 0  
+Explain: 5 > 5 = 0  
 
 Sample Input 2:  
 ```
@@ -297,7 +297,7 @@ Sample Output 2:
 0001
 1
 ```
-Meaning: 6 > 5 = 1  
+Explain: 6 > 5 = 1  
 
 #### Addition 
 $$ C = A + B $$
@@ -326,7 +326,7 @@ Sample Output:
 1
 13
 ```
-Meaning: 7+6 = 13  
+Explain: 7+6 = 13  
 
 #### Multiplication  
 $$ C = A * B $$
@@ -351,7 +351,7 @@ Sample Output:
 001100
 12
 ```
-Meaning: 3*4 = 12  
+Explain: 3*4 = 12  
 
 
 
@@ -738,6 +738,3 @@ Explain Algorithm
 
 Reference:
 https://link.springer.com/article/10.1007/s11128-020-02873-5 (Grid-like Coupling Architecture)
-
-
-
