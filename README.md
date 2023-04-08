@@ -696,6 +696,10 @@ GISC is capable of contructing 16 bits, 32 bits or 64 bits architecture
 Todo
 4 bit GISC for testing actutal hardware
 
+8 registers max
+32 bits
+setOnce for probability mode
+
 lifetime(~20us == ~20,000ns) for each qubit [from Rigetti doc]
 each gate ~(40-180ns)
 current 7065*180ns == 1271700 ns == 1271.7us
