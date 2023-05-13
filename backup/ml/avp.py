@@ -59,7 +59,7 @@ result = job.result()
 counts = result.get_counts(compiled_circuit)
 print("Result: ",counts)
 
-circuit.draw(output='mpl',filename='hello')
+circuit.draw(output='mpl',filename='avp')
 
 ap = counts[max(counts,key=counts.get)]/SHOTS
 
