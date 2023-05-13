@@ -353,6 +353,49 @@ Sample Output:
 ```
 Explain: 3*4 = 12  
 
+### Machine Learning
+
+#### Angle to Normalized Probablity
+
+$$ P = N(D) $$
+
+P: Probability
+D: Degree
+N: Normalize
+
+<img src="photos/a2p.png" title="Angle To Probability" width=50%>
+
+Demo: [a2p.py](backup/a2p.py)  
+
+Usage:  
+```
+user@computer: cd backup/ml
+user@computer: python3 a2p.py
+```
+Sample Input/Output:  
+```
+Rotated Angle: 45
+
+Expected Measured probablity:  14.645%
+Expected Normalized Probability: 25.000%
+Result:  {'1': 14785, '0': 85215}
+
+Actual Measured Probability: 14.785%
+Actual Normalized Probability: 25.126%
+Error Rate:  0.502%
+
+```
+Explain: 45 degree is equalvalent to 25% hitting rate.
+
+In Depth
+
+|Degree|Probability|
+|:-|-:|
+|45 		| ~25%|
+|90 		| ~50%|
+|135 		| ~75%|
+|180 		| ~100%|
+
 
 
 ## 8-bits GISC Quantum Computer Prototype
