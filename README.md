@@ -355,7 +355,7 @@ Explain: 3*4 = 12
 
 ### Machine Learning
 
-#### Angle to Normalized Probablity
+#### Angle versus Probablity
 
 $$ P = N(D) $$
 
@@ -363,14 +363,14 @@ P: Probability
 D: Degree
 N: Normalize
 
-<img src="photos/a2p.png" title="Angle To Probability" width=50%>
+<img src="photos/avp.png" title="Angle Versus Probability" width=50%>
 
-Demo: [a2p.py](backup/a2p.py)  
+Demo: [avp.py](backup/ml/avp.py)  
 
 Usage:  
 ```
 user@computer: cd backup/ml
-user@computer: python3 a2p.py
+user@computer: python3 avp.py
 ```
 Sample Input/Output:  
 ```
