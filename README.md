@@ -440,6 +440,8 @@ Explain: The purple image finder maps the pre-calcuated weight to determine whet
 
 Demo: [qml_learning.py](backup/ml/qml_learning.py)  
 
+Usage:  
+```
 user@computer: cd backup/ml/qml_learning
 user@computer: python3 qml_learning.py
 ```
