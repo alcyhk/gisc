@@ -396,7 +396,96 @@ In Depth
 |135 		| ~75%|
 |180 		| ~100%|
 
+#### QML Mapping
 
+<img src="photos/qml_mapping.png" title="QML Mapping" width=50%>
+
+Demo: [qml_mapping.py](backup/ml/qml_mapping.py)  
+
+Usage:  
+```
+user@computer: cd backup/ml
+user@computer: python3 qml_mapping.py
+```
+Sample Input/Output:  
+```
+Purple Image finder 
+Description: Check if the image is purple
+
+Original Image:
+px0 [ 128.0 0.0 112.0 ]
+px1 [ 130.0 100.0 132.0 ]
+px2 [ 150.0 20.0 160.0 ]
+px3 [ 150.0 40.0 100.0 ]
+
+Normalized Image:
+px0 [ 1.58 0.00 1.38 ]
+px1 [ 1.60 1.23 1.63 ]
+px2 [ 1.85 0.25 1.97 ]
+px3 [ 1.85 0.49 1.23 ]
+
+Original Weight [ 139.50 40.00 126.00 ]
+
+Normalized Weight [ 1.69 0.32 1.51 ]
+
+Probability of Matching 88.19 %
+
+Matched: Kinda
+```
+Explain: The purple image finder maps the pre-calcuated weight to determine whether the 2x2 image is purple color or not.
+
+#### QML Learning
+
+<img src="photos/qml_learning.png" title="QML Learning" width=50%>
+
+Demo: [qml_learning.py](backup/ml/qml_learning.py)  
+
+user@computer: cd backup/ml
+user@computer: python3 qml_learning.py
+```
+Sample Input/Output:  
+```
+Purple Image Trainer 
+Description: Find the decent weight
+
+Training ...
+
+Group  0
+
+r:  [506, 250, 76, 57, 114, 261, 488]
+g:  [127, 158, 284, 468, 628, 749, 792]
+b:  [504, 388, 268, 227, 251, 377, 497]
+
+index of desired r,g,b:  3 0 3
+
+Group  1
+
+r:  [486, 218, 81, 41, 116, 273, 470]
+g:  [106, 154, 269, 466, 637, 758, 794]
+b:  [521, 379, 283, 250, 283, 368, 484]
+
+index of desired r,g,b:  3 0 3
+
+Group  2
+
+r:  [507, 231, 82, 51, 126, 276, 474]
+g:  [136, 167, 283, 466, 623, 769, 805]
+b:  [523, 378, 281, 254, 292, 363, 482]
+
+index of desired r,g,b:  3 0 3
+
+Group  3
+
+r:  [504, 227, 85, 54, 119, 254, 505]
+g:  [114, 129, 266, 468, 631, 747, 813]
+b:  [520, 375, 275, 237, 280, 367, 462]
+
+index of desired r,g,b:  3 0 3
+Weight for the Target Model are 1.57 0.00 1.57
+
+
+```
+Explain: The purple image trainer demostrates how to train a purple image pixel finder.
 
 ## 8-bits GISC Quantum Computer Prototype （w/o ML）
 Codename: Darklain
