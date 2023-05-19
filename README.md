@@ -398,7 +398,7 @@ In Depth
 
 
 
-## 8-bits GISC Quantum Computer Prototype
+## 8-bits GISC Quantum Computer Prototype （w/o ML）
 Codename: Darklain
 
 ## Specification
