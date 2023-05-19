@@ -404,7 +404,7 @@ Demo: [qml_mapping.py](backup/ml/qml_mapping.py)
 
 Usage:  
 ```
-user@computer: cd backup/ml
+user@computer: cd backup/ml/qml_mapping
 user@computer: python3 qml_mapping.py
 ```
 Sample Input/Output:  
@@ -440,7 +440,7 @@ Explain: The purple image finder maps the pre-calcuated weight to determine whet
 
 Demo: [qml_learning.py](backup/ml/qml_learning.py)  
 
-user@computer: cd backup/ml
+user@computer: cd backup/ml/qml_learning
 user@computer: python3 qml_learning.py
 ```
 Sample Input/Output:  
