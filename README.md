@@ -28,8 +28,16 @@ pip install qiskit
 ```
 
 ### Usage
+
+#### Regular version (Without ML)
 ```
 user@computer: cd prototype
+user@computer: python3 arch.py
+```
+
+#### AI version (With ML)
+```
+user@computer: cd prototypeML
 user@computer: python3 arch.py
 ```
 
@@ -489,7 +497,7 @@ Weight for the Target Model are 1.57 0.00 1.57
 ```
 Explain: The purple image trainer demostrates how to train a purple image pixel finder.
 
-## 8-bits GISC Quantum Computer Prototype （w/o ML）
+## 8-bits GISC Quantum Computer Prototype
 Codename: Darklain
 
 ## Specification
@@ -534,8 +542,9 @@ Depth of Basis Gates: 7065
 \* QUB_OUTPUTCL: Qubit Output C Lower 3 bits  
 \* QUB_OUTPUTCU: Qubit Output C Upper 3 bits  
 
+## Version: without ML
 
-## Sample Input
+## Sample Input 1
 
 Math Notation:
 
@@ -570,7 +579,7 @@ Explain:
 \* Set jump instruction to 7  
 \* Fly  
 
-## Sample Output
+## Sample Output 1
 
 ```
 start
@@ -784,6 +793,299 @@ End
 
 
 ```
+
+## Note: with ML
+
+## Sample Input 2
+
+Math Notation:
+
+$$ SG = 4 $$
+
+$$ F $$
+
+$$ F $$
+
+$$ F $$
+
+$$ F $$
+
+$$ SG= 0 $$
+
+Purpose:  
+**Goes thru a training process for 5 runs, then maps the generated weight to the sample and see the result.**
+```
+SET QUB_SG VAL_FOUR
+FLY
+FLY
+FLY
+FLY
+SET QUB_SG VAL_ZERO  
+
+```
+Explain:    
+\* Set grid register qub_sg to 4 (Trigger the Machine Training)  
+\* Fly  
+\* Fly  
+\* Fly  
+\* Fly  
+\* Set grid register qub_sg to 0 (Trigger the Machine Mapping) 
+\* Copy grid register qub_inputB from grid register qub_outputcl  
+
+## Sample Output 2
+
+```
+start
+----------------------------
+run  1
+Current Addr:  0
+ISA: OP_SET QUB_SG VAL_FOUR 
+
+Result: {'000000000000000000000000000001001010100000000000000000100000000001': 10}
+opaddr  1 | 0 0 1
+isa  0 1 0 1 0 1 0 0
+fly,set,cpy,phy  0 1 0 0
+regA  0
+regB  0
+regSG  4
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Training
+
+Training Group:  0
+
+r:  [467, 214, 87, 60, 121, 299, 517]
+g:  [128, 166, 277, 471, 638, 756, 800]
+b:  [489, 352, 276, 229, 313, 400, 519]
+
+index of desired r,g,b:  3 0 3
+----------------------------
+run  2
+Current Addr:  1
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000100000000010': 10}
+opaddr  2 | 0 1 0
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  4
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Training
+
+Training Group:  1
+
+r:  [500, 229, 81, 62, 108, 244, 480]
+g:  [110, 143, 273, 465, 645, 794, 840]
+b:  [507, 357, 253, 231, 280, 374, 511]
+
+index of desired r,g,b:  3 0 3
+----------------------------
+run  3
+Current Addr:  2
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000100000000011': 10}
+opaddr  3 | 0 1 1
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  4
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Training
+
+Training Group:  2
+
+r:  [508, 242, 81, 52, 117, 257, 467]
+g:  [105, 167, 287, 459, 637, 765, 797]
+b:  [507, 375, 277, 234, 275, 364, 495]
+
+index of desired r,g,b:  3 0 3
+----------------------------
+run  4
+Current Addr:  3
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000100000000100': 10}
+opaddr  4 | 1 0 0
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  4
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Training
+
+Training Group:  3
+
+r:  [492, 222, 82, 48, 112, 270, 512]
+g:  [126, 156, 273, 492, 647, 772, 818]
+b:  [517, 357, 260, 246, 279, 362, 515]
+
+index of desired r,g,b:  3 0 3
+----------------------------
+run  5
+Current Addr:  4
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000100000000101': 10}
+opaddr  5 | 1 0 1
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  4
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Training
+
+Calculating the weight ...
+The weight for the Target Model are 1.57 0.00 1.57
+----------------------------
+run  6
+Current Addr:  5
+ISA: OP_SET QUB_SG VAL_ZERO 
+
+Result: {'000000000000000000000000100001001010000000000000000000000000000110': 10}
+opaddr  6 | 1 1 0
+isa  0 1 0 1 0 0 0 0
+fly,set,cpy,phy  0 1 0 0
+regA  0
+regB  0
+regSG  0
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Mapping
+
+[[1.84799568 0.49279885 1.50303649]
+ [1.68783605 0.32031925 1.50303649]
+ [1.58927628 0.23407945 1.50303649]
+ [1.63855617 0.32031925 1.50303649]]
+[1.57079633 0.         1.57079633]
+{'10000': 27, '00000': 973}
+
+Probability of Matching 89.49 %
+
+Matched: 85%
+----------------------------
+run  7
+Current Addr:  6
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000000000000111': 10}
+opaddr  7 | 1 1 1
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  0
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Mapping
+
+[[1.84799568 0.49279885 1.50303649]
+ [1.68783605 0.32031925 1.50303649]
+ [1.58927628 0.23407945 1.50303649]
+ [1.63855617 0.32031925 1.50303649]]
+[1.57079633 0.         1.57079633]
+{'10000': 21, '00000': 979}
+
+Probability of Matching 90.74 %
+
+Matched: 90%
+----------------------------
+run  8
+Current Addr:  7
+ISA: OP_FLY QUB_REGA VAL_ZERO 
+
+Result: {'000000000000000000000000000000100000000000000000000000000000000000': 10}
+opaddr  0 | 0 0 0
+isa  0 0 0 0 0 0 0 0
+fly,set,cpy,phy  1 0 0 0
+regA  0
+regB  0
+regSG  0
+regInputA  0
+regInputB  0
+regInputS  0
+regOutputCL  0
+regOutputCU  0
+----------------------------
+
+State: Mapping
+
+[[1.84799568 0.49279885 1.50303649]
+ [1.68783605 0.32031925 1.50303649]
+ [1.58927628 0.23407945 1.50303649]
+ [1.63855617 0.32031925 1.50303649]]
+[1.57079633 0.         1.57079633]
+{'10000': 18, '00000': 982}
+
+Probability of Matching 91.43 %
+
+Matched: 90%
+
+Type of gates
+	 x 158
+	 mcx 103
+	 state_preparation 59
+	 cx 58
+	 ccx 58
+	 cswap 56
+	 measure 42
+	 mcx_gray 31
+	 barrier 1
+	 swap 1
+Non-local gates:  307
+Number of Quantum bits:  177
+Number of Classical bits:  66
+Depth:  104
+Depth(basis gates):  7065
+End
+
+
+```
+
 ## Device Architecture
 
 ### 2D Coupling Map
