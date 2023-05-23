@@ -500,7 +500,7 @@ Explain: The purple image trainer demostrates how to train a purple image pixel 
 ## 8-bits GISC Quantum Computer Prototype
 Codename: Darklain
 
-## Specification
+### Specification
 ISA Size: 8 Bits  
 Max ISA Address: 8 Operations  
 Register Size(Grid & Phy): 3 bit (0-7)  
@@ -510,7 +510,7 @@ Number of Classical bits: 66
 Depth of Logic Gates: 104  
 Depth of Basis Gates: 7065  
 
-## Key Parameters
+### Key Parameters
 |Name|Binary|Decimal|
 |:-|-:|:-:|
 |OP_SET 		| 01|1|
@@ -542,9 +542,9 @@ Depth of Basis Gates: 7065
 \* QUB_OUTPUTCL: Qubit Output C Lower 3 bits  
 \* QUB_OUTPUTCU: Qubit Output C Upper 3 bits  
 
-## Version: without ML
+### Noted: without ML
 
-## Sample Input 1
+### Sample Input 1
 
 Math Notation:
 
@@ -579,7 +579,7 @@ Explain:
 \* Set jump instruction to 7  
 \* Fly  
 
-## Sample Output 1
+### Sample Output 1
 
 ```
 start
@@ -794,9 +794,9 @@ End
 
 ```
 
-## Note: with ML
+### Noted: with ML
 
-## Sample Input 2
+### Sample Input 2
 
 Math Notation:
 
@@ -832,7 +832,7 @@ Explain:
 \* Set grid register qub_sg to 0 (Trigger the Machine Mapping) 
 \* Copy grid register qub_inputB from grid register qub_outputcl  
 
-## Sample Output 2
+### Sample Output 2
 
 ```
 start
