@@ -2,7 +2,7 @@
 ## Grid Instruction Set Computer
 
 ## Description
-GISC is an instruction set architecture designed for the ***general-purpose quantum computer with machine learning***. Here is the proof of concept with a 8 bits GISC qpu.  
+GISC is an instruction set architecture designed for the ***general-purpose quantum computer***. Here is the proof of concept with a 8 bits GISC qpu. 
 
 ## Blueprint
 <img src="photos/blueprint.png" title="Blueprint">  
