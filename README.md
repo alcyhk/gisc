@@ -497,7 +497,7 @@ Weight for the Target Model are 1.57 0.00 1.57
 ```
 Explain: The purple image trainer demostrates how to train a purple image pixel finder.
 
-## 8-bits GISC Quantum Computer Prototype
+## 8-bits GISC Quantum Computer Prototype (w/o ML)
 Codename: Darklain
 
 ### Specification
@@ -542,9 +542,7 @@ Depth of Basis Gates: 7065
 \* QUB_OUTPUTCL: Qubit Output C Lower 3 bits  
 \* QUB_OUTPUTCU: Qubit Output C Upper 3 bits  
 
-### Noted: without ML
-
-### Sample Input 1
+### Sample Input
 
 Math Notation:
 
@@ -579,7 +577,7 @@ Explain:
 \* Set jump instruction to 7  
 \* Fly  
 
-### Sample Output 1
+### Sample Output
 
 ```
 start
@@ -793,10 +791,9 @@ End
 
 
 ```
+## 8-bits GISC Quantum Computer Prototype (w ML)
 
-### Noted: with ML
-
-### Sample Input 2
+### Sample Input
 
 Math Notation:
 
@@ -832,7 +829,7 @@ Explain:
 \* Set grid register qub_sg to 0 (Trigger the Machine Mapping) 
 \* Copy grid register qub_inputB from grid register qub_outputcl  
 
-### Sample Output 2
+### Sample Output
 
 ```
 start
