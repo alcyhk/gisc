@@ -83,7 +83,7 @@ def simMetaEndDraw(circuit):
 
 def ModSimMetaEnd(circuit):
 	simMetaEndPrint(circuit)
-	simMetaEndDraw(circuit)
+	#simMetaEndDraw(circuit)
 
 	
 	
