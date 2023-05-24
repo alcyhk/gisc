@@ -4,8 +4,6 @@
 ## Description
 GISC is an instruction set architecture designed for the ***general-purpose quantum computer with machine learning***. Here is the proof of concept with a 8 bits GISC qpu.  
 
-\* For the full-suite proof of concept with a classical computer. Please download the fpga bitstream and follow the instructions from the ***classical*** folder.  
-
 ## Blueprint
 <img src="photos/blueprint.png" title="Blueprint">  
 
